@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
-"""using flask nd other dependecies"""
+"""A simple flask app"""
+
+
 from flask import Flask, render_template
 
 app = Flask(__name__)
 
 
 @app.route('/')
-def index():
+def hello_world():
+    """to run on the website"""
     return render_template('0-index.html')
 
 
